@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Welcome Anna Maria</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  </style>
+</head>
+<body>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://lh3.googleusercontent.com/7xdM_A1bk9StFE06yELbk_o038Hm3MRDTsT_7melK5W374ZhKNBX4nidJuJM6VHUOnGcl6AZz-LJHI1LgiSWD_E5MEhUcHh0JEE6-drlFny84u2CSIRrT4pnbUVxy3V4caKGmtYkmah-afwFiSLJ4USB_zs1fEzBcZMFb0OnERG3VVdgAC72GG55TzUg8SIbCPzCxZNM2MzOBHQcUItD7odU5HUG5bsgDNJG_LCtACySgfi4DzD_dt7IXUMSA5vERrRP17y-l6-PmF-VGnkVMN4Ap520jTecnn9a-BIkyJ56Ax8iPjNkoCjWe6J7nxaW2cAjCsnKTICkrcWjxSXwzyrSQivL1JAif-SlaD8Fgf90UlEO50sa2FkOLjzNaPHJ6jTH7iupr7quJMJrdoDU1tpDf2MDV8sbhrezLCMXMtnoQ8LPwvnUfduSVj7ZNGL9uRAux7BTRBxfsDexWn1Ro1Qclqj_nnnqGCWRE4QcQWePm_-RdCiA0Ib5tnCyCtMyf9wUch6iA4P33Z9yg0KC3EK0batQO4wgzO4A5bIpAT0QuJ51NaLV-HuIkuk3wjFYSx_MeTG-k8iZ9RR-qbi1yAVXmIHP6fV69Thxj_3nK6b5kfhV2KfZSoaF5qCkirNl6GGQ77gQp3V_DKN4AdAKI2SNgqMkXRgP7Alzk-xta2X5cOa-3MLAeBihrn0Ip6A6HdnnB0O41n_tNyUiZ4JY0eqjow=w904-h1354-no?authuser=0" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://lh3.googleusercontent.com/DvoUGsQeUgnWrodxQdvgc4kn-Qlyo0gJgyR6ibeBYoR7APzY7h_EXFFUDUmjzj_2c0krov_mSMtAJaSYOtne7PR-WowgeenuD3BCRVpCATTL7U5gRSLPZv-jYIbOoedNXcjjvZO8JO_bAcwIjvgS5FbXwnzcN2HkHfOYQmsW6_E7ilIOEjjonIA0aADVs5aNofgo-lI21RfJYELweojLLWmiZQbAPbHhtDk0ZsOm41_U_xa2_RaHb0YQd5NnrHhFJDvkrLnU1P4Wg1yW3aZdRD9idsIy0iJaUa0r2UGZ7twnQMw_NeozVnvaiifYwqRCKxljD1tg5j-BYFh_lt4D1eMddxyaX53GOV4F1nYjV0N3aVo7n1MOIrLJrGzb3wFYLUIjqgXnYtA1GsvBHTnuzKrswPkZrl3U5j8AieaKhPYwzoxI3jw7WikUD_Jlw7IlTYy84ptXJOqmqo-_TxX72E9bkWPnPrNhJh-cDQW9PdHqI_iheQDs4UjkK4yJS1B9_nqmKdh5J0IZopFjPKzYykWlM4HCLT3lyz-Lk3SLEWt6Rxo6plCFgYSwYzAjj6omG_Xto6-bZGBlUOoowwoWP6IxDZhwFvz-rHpdphlE27Kn5HbCr4HC89OURa8erkI_0zGQWkTLDl_ngCFXMR3S7-LtxU4YojVpXrk5Exd88TVCv9WGe5GaBkwIY--HikzwLy0I3QqTBfwmy9ZIFTD3ekf0yQ=w1014-h1354-no?authuser=0" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://lh3.googleusercontent.com/i4Xb58z6swL7JmbODc-7uYONulTWdKEAMNdhNROX0djLhiVsbWUAgCS7u0fSIKhRMpqh91k8-nrHFE9NrnwjXCnhafpNoJJi0k8ynqnNH2GDZ_nfJPkD_NWetzAK3-rLg2tyNrK3pkF_sCRImjpUtzMi6YjFtuunwnN10MZDUmxusD-aZ8YL14tcth3UzuydbEqpVeXdp-4KngAeyZn5moVj6BVrXhFEfgWHOSAH8RZlPBH2-LWM1JIFAmy4ZSLWB02SsvgunNA68lSuOTxG8RfAHDD9IbSjdyPutY7679AbWARuYW1V80Sye_mktZy1GERXUROKMa-PHFdd5rT9NOjk-7r51krq6iA2jLeQRi3RIciRaBGEDRdiDkZ7mk_wOm0dPV5fL_r-o6wp0ZnihYDQBj9FP4YE-EcYOhsA2oRpg3bP6rYl5uE-PSrja-1PtShH1bc9z62qH2VNmoROoy1h_nJCGC50ZQXGOIqzP35g76iTAnIpDKekztDYBPrMszZfEvjwbMSZ8xsR18h1vP4lu56TkH_u2dA8khlQLwfgYKJWgXSg4i-POQhXl60GP0dvlk_whtZqpwAwmDXE92WiJuwLoAcF_b2wdM6TAEW-cu8Np5WCKoxkLKWr1CDTtOKYhXChDbPAayZpuk6pJkt9REpUHUo-80Bjxc__tHta_DN6tipIkagkHmIAbfPrfKtN_Pgd52U8_bnap71x_sCvsA=w1016-h1354-no?authuser=0" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+<a href="page13.html">
+  <button>
+      Next Section
+  </button></a>
+
+    <script>
+       
+       var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+    
+
+    </script>
+</body>
+</html>
